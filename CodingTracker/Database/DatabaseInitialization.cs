@@ -18,7 +18,7 @@ public class DatabaseInitialization
 
         var createCodingSessionsTableSql = """
                                            CREATE TABLE IF NOT EXISTS codingSessions (
-                                               id INTEGER PRIMARY KEY,
+                                               id INTEGER PRIMARY KEY AUTOINCREMENT,
                                                startTime TEXT NOT NULL,
                                                endTime TEXT NOT NULL,
                                                duration REAL
